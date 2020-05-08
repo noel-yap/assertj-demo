@@ -1,0 +1,16 @@
+################
+.gradle
+.m2
+
+# Build output directies #
+##########################
+**/build
+**/out
+
+# IntelliJ specific files/directories #
+#######################################
+.idea
+
+# VSCode #
+##########
+.vscode

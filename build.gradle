@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.+'
+    testImplementation 'org.assertj:assertj-core:3.+'
+    testImplementation 'org.hamcrest:hamcrest:2.+'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
+    testImplementation 'org.junit.platform:junit-platform-launcher:1.+'
+
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.+'
+}
+
+compileJava {
+    options.compilerArgs << '-Xlint:deprecation'
+}
+
+test {
+    useJUnitPlatform()
+}
